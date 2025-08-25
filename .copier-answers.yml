@@ -1,0 +1,13 @@
+_commit: v1.5.1-2-g29264c9
+_src_path: /Users/simonjasansky/programming/substrate
+author_email: simon@superlinear.eu
+author_name: Simon Jasansky
+documentation_tool: mkdocs
+project_description: Test Substrate
+project_name: Test Substrate
+project_type: package
+project_url: https://github.com/SimonJasansky/test_substrate
+python_version: '3.10'
+typing: optional
+with_conventional_commits: true
+with_typer_cli: false
