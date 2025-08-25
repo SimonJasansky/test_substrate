@@ -18,4 +18,4 @@ import test_substrate
 
 ## API Reference
 
-See the [API Reference](reference/) for detailed documentation.
+See the [API Reference](reference/index.md) for detailed documentation.

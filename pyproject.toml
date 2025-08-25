@@ -30,7 +30,8 @@ dev = [
   "ipython (>=8.18.0)",
   "ipywidgets (>=8.1.2)",
   "mypy (>=1.14.1)",
-  "pdoc (>=15.0.1)",
+  "mkdocs-material (>=9.5.21)",
+  "mkdocstrings[python] (>=0.26.2)",
   "poethepoet (>=0.32.1)",
   "pre-commit (>=4.0.1)",
   "pytest (>=8.3.4)",
@@ -102,46 +103,11 @@ type = "simple"
 [tool.poe.tasks]
   [tool.poe.tasks.docs]
   help = "Generate this package's docs"
-  cmd = """
-    pdoc
-      --docformat $docformat
-      --output-directory $outputdirectory
-      test_substrate
-    """
-
-    [[tool.poe.tasks.docs.args]]
-    help = "The docstring style (default: numpy)"
-    name = "docformat"
-    options = ["--docformat"]
-    default = "numpy"
-
-    [[tool.poe.tasks.docs.args]]
-    help = "The output directory (default: docs)"
-    name = "outputdirectory"
-    options = ["--output-directory"]
-    default = "docs"
+  cmd = "mkdocs build"
 
   [tool.poe.tasks.docs-serve]
   help = "Serve the docs locally"
-  cmd = """
-    pdoc
-      --docformat numpy
-      --host $host
-      --port $port
-      test_substrate
-    """
-
-    [[tool.poe.tasks.docs-serve.args]]
-    help = "Bind socket to this host (default: localhost)"
-    name = "host"
-    options = ["--host"]
-    default = "localhost"
-
-    [[tool.poe.tasks.docs-serve.args]]
-    help = "Bind socket to this port (default: 8080)"
-    name = "port"
-    options = ["--port"]
-    default = "8080"
+  cmd = "mkdocs serve"
 
   [tool.poe.tasks.lint]
   help = "Lint this package"
