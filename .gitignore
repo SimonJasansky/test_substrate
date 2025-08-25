@@ -68,5 +68,5 @@ uv.lock
 # VS Code
 .vscode/
 
-# MkDocs
-site/
+# pdoc
+docs/
