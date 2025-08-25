@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --group dev
         
-      - name: Build docs with pdoc
+      - name: Build docs
         run: uv run poe docs
       
       - name: Setup Pages
