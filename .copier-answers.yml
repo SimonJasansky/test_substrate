@@ -1,8 +1,8 @@
-_commit: v1.5.1-2-g29264c9
+_commit: v1.5.1-2-g043efb4
 _src_path: /Users/simonjasansky/programming/substrate
 author_email: simon@superlinear.eu
 author_name: Simon Jasansky
-documentation_tool: mkdocs
+documentation_tool: pdoc
 project_description: Test Substrate
 project_name: Test Substrate
 project_type: package
