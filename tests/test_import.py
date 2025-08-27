@@ -4,5 +4,5 @@ import test_substrate
 
 
 def test_import() -> None:
-    """Test that the package can be imported."""
+    """Test that the app can be imported."""
     assert isinstance(test_substrate.__name__, str)

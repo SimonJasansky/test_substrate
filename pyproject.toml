@@ -12,6 +12,7 @@ authors = [
 ]
 requires-python = ">=3.10,<4.0"
 dependencies = [
+  "poethepoet (>=0.32.1)",
 ]
 
 [project.urls]  # https://packaging.python.org/en/latest/specifications/well-known-project-urls/#well-known-labels
@@ -31,8 +32,6 @@ dev = [
   "ipywidgets (>=8.1.2)",
   "mypy (>=1.14.1)",
   "mkdocs-material (>=9.5.21)",
-  "mkdocstrings[python] (>=0.26.2)",
-  "poethepoet (>=0.32.1)",
   "pre-commit (>=4.0.1)",
   "pytest (>=8.3.4)",
   "pytest-mock (>=3.14.0)",
@@ -102,8 +101,14 @@ type = "simple"
 
 [tool.poe.tasks]
 
+  [tool.poe.tasks.serve]
+  help = "Serve the app"
+
+    [[tool.poe.tasks.serve.sequence]]
+    cmd = "echo 'Serving app (placeholder)...'"
+
   [tool.poe.tasks.lint]
-  help = "Lint this package"
+  help = "Lint this app"
   cmd = """
     pre-commit run
       --all-files
@@ -111,7 +116,7 @@ type = "simple"
     """
 
   [tool.poe.tasks.test]
-  help = "Test this package"
+  help = "Test this app"
 
     [[tool.poe.tasks.test.sequence]]
     cmd = "coverage run"
