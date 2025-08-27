@@ -101,13 +101,6 @@ convention = "numpy"
 type = "simple"
 
 [tool.poe.tasks]
-  [tool.poe.tasks.docs]
-  help = "Generate this package's docs"
-  cmd = "mkdocs build"
-
-  [tool.poe.tasks.docs-serve]
-  help = "Serve the docs locally"
-  cmd = "mkdocs serve"
 
   [tool.poe.tasks.lint]
   help = "Lint this package"
