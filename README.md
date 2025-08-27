@@ -4,18 +4,22 @@
 
 Test Substrate
 
-## Using
+## Installing
 
-To serve this app, run:
+To install this package, run:
 
 ```sh
-docker compose up app
+pip install test-substrate
 ```
 
-Within the Dev Container this is equivalent to:
+## Using
 
-```sh
-poe serve
+Example usage:
+
+```python
+import test_substrate
+
+...
 ```
 
 ## Contributing
@@ -75,6 +79,6 @@ The following development environments are supported:
 - Run `poe` from within the development environment to print a list of [Poe the Poet](https://github.com/nat-n/poethepoet) tasks available to run on this project.
 - Run `uv add {package}` from within the development environment to install a run time dependency and add it to `pyproject.toml` and `uv.lock`. Add `--dev` to install a development dependency.
 - Run `uv sync --upgrade` from within the development environment to upgrade all dependencies to the latest versions allowed by `pyproject.toml`. Add `--only-dev` to upgrade the development dependencies only.
-- Run `cz bump` to bump the app's version, update the `CHANGELOG.md`, and create a git tag. Then push the changes and the git tag with `git push origin main --tags`.
+- Run `cz bump` to bump the package's version, update the `CHANGELOG.md`, and create a git tag. Then push the changes and the git tag with `git push origin main --tags`.
 
 </details>

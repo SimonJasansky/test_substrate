@@ -14,9 +14,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10"]
+        python-version: ["3.10", "3.12"]
+        resolution-strategy: ["highest", "lowest-direct"]
 
-    name: Python ${{ matrix.python-version }}
+    name: Python ${{ matrix.python-version }} (resolution=${{ matrix.resolution-strategy }})
 
     steps:
       - name: Checkout
@@ -36,9 +37,10 @@ jobs:
           devcontainer up --workspace-folder .
         env:
           PYTHON_VERSION: ${{ matrix.python-version }}
+          RESOLUTION_STRATEGY: ${{ matrix.resolution-strategy }}
 
-      - name: Lint app
+      - name: Lint package
         run: devcontainer exec --workspace-folder . poe lint
 
-      - name: Test app
+      - name: Test package
         run: devcontainer exec --workspace-folder . poe test
