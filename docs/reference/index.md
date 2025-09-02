@@ -1,3 +1,3 @@
-# API Reference
+# Reference
 
 ::: test_substrate

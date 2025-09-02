@@ -19,7 +19,7 @@ homepage = "https://github.com/SimonJasansky/test_substrate"
 source = "https://github.com/SimonJasansky/test_substrate"
 changelog = "https://github.com/SimonJasansky/test_substrate/blob/main/CHANGELOG.md"
 releasenotes = "https://github.com/SimonJasansky/test_substrate/releases"
-documentation = "https://SimonJasansky.github.io/test_substrate"
+docs = "https://SimonJasansky.github.io/test_substrate"
 issues = "https://github.com/SimonJasansky/test_substrate/issues"
 
 [dependency-groups]  # https://docs.astral.sh/uv/concepts/projects/dependencies/#development-dependencies

@@ -1,6 +1,6 @@
 site_name: Test Substrate
 site_description: Test Substrate
-site_url: https://github.com/SimonJasansky/test_substrate
+site_url: https://SimonJasansky.github.io/test_substrate
 repo_url: https://github.com/SimonJasansky/test_substrate
 repo_name: SimonJasansky/test_substrate
 
@@ -9,7 +9,7 @@ theme:
 
 nav:
   - Home: index.md
-  - API Reference: reference/
+  - Reference: reference/
 
 plugins:
   - search
