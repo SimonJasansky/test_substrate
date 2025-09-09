@@ -9,7 +9,10 @@ theme:
 
 nav:
   - Home: index.md
-  - Reference: reference/
+  - Reference: reference.md
+
+watch:
+  - src
 
 plugins:
   - search
@@ -20,5 +23,5 @@ plugins:
             docstring_style: numpy
 
 markdown_extensions:
-  - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.superfences
