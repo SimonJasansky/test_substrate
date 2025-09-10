@@ -10,7 +10,7 @@ readme = "README.md"
 authors = [
   { name = "Simon Jasansky", email = "simon@superlinear.eu" },
 ]
-requires-python = ">=3.10,<4.0"
+requires-python = ">=3.11,<4.0"
 dependencies = [
 ]
 
